@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final Result Prediction Form</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/styling.css') }}"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <div class="testbox">
+      <form action="{{ url_for('predict')}}" method="post">
+        <div class="banner">
+          <h1>Drug Consumption Prediction</h1>
+        </div>
+        <h2 style="text-align: center">
+          Fill out your personality traits to predict your <br />potential
+          attraction for drugs
+        </h2>
+
+        <div class="item">
+          <label for="Nscore">Neuroticism</label>
+          <select id="Nscore" name="Nscore" required>
+            <option disabled selected value>-- select an option --</option>
+            <option value="-3.46436">Low</option>
+            <option value="0">Medium</option>
+            <option value="3.27393">High</option>
+          </select>
+        </div>
+
+        <div class="item">
+          <label for="Escore">Extraversion</label>
+          <select id="Escore" name="Escore" required>
+            Select length of the course
+            <option disabled selected value>-- select an option --</option>
+            <option value="-3.27393">Low</option>
+            <option value="0">Medium</option>
+            <option value="3.27393">High</option>
+          </select>
+        </div>
+
+        <div class="item">
+          <label for="Oscore">Openness to experience</label>
+          <select id="Oscore" name="Oscore" required>
+            Select length of the course
+            <option disabled selected value>-- select an option --</option>
+            <option value="-3.27393">Low</option>
+            <option value="0">Medium</option>
+            <option value="2.90161">High</option>
+          </select>
+        </div>
+
+        <div class="item">
+          <label for="Ascore">Agreeableness</label>
+          <select id="Ascore" name="Ascore" required>
+            Select length of the course
+            <option disabled selected value>-- select an option --</option>
+            <option value="-3.46436">Low</option>
+            <option value="0">Medium</option>
+            <option value="3.46436">High</option>
+          </select>
+        </div>
+
+        <div class="item">
+          <label for="Cscore">Conscientiousness</label>
+          <select id="Cscore" name="Cscore" required>
+            Select length of the course
+            <option disabled selected value>-- select an option --</option>
+            <option value="-3.46436">Low</option>
+            <option value="0">Medium</option>
+            <option value="3.46436">High</option>
+          </select>
+        </div>
+
+        <div class="item">
+          <label for="Impulsive">Impulsiveness</label>
+          <select id="Impulsive" name="Impulsive" required>
+            Select length of the course
+            <option disabled selected value>-- select an option --</option>
+            <option value="-2.55524">Low</option>
+            <option value="0">Medium</option>
+            <option value="2.90161">High</option>
+          </select>
+        </div>
+
+        <div class="item">
+          <label for="SS">Sensation seeking</label>
+          <select id="SS" name="SS" required>
+            Select length of the course
+            <option disabled selected value>-- select an option --</option>
+            <option value="-2.07848">Low</option>
+            <option value="0">Medium</option>
+            <option value="1.92173">High</option>
+          </select>
+        </div>
+
+        <h2 style="text-align: center">Fill out more information here :</h2>
+
+        <div class="item">
+          <label for="Age">Age</label>
+          <select id="Age" name="Age" required>
+            Select length of the course
+            <option disabled selected value>-- select an option --</option>
+            <option value="-0.95197">18 - 24</option>
+            <option value="-0.07854">25 - 34</option>
+            <option value="0.49788">35 - 44</option>
+            <option value="1.09449">45 - 54</option>
+            <option value="1.82213">55 - 64</option>
+            <option value="2.59171">64+</option>
+          </select>
+        </div>
+
+        <div class="item">
+          <label for="Gender">Gender</label>
+          <select id="Gender" name="Gender" required>
+            Select length of the course
+            <option disabled selected value>-- select an option --</option>
+            <option value="0.48246">Female</option>
+            <option value="-0.48246">Male</option>
+          </select>
+        </div>
+
+        <div class="item">
+          <label for="Education">Education</label>
+          <select id="Education" name="Education" required>
+            Select length of the course
+            <option disabled selected value>-- select an option --</option>
+            <option value="-2.43591">Left School Before 16 years</option>
+            <option value="-1.73790">Left School at 16 years</option>
+            <option value="-1.43719">Left School at 17 years</option>
+            <option value="-1.22751">Left School at 18 years</option>
+            <option value="-0.61113">
+              Some College,No Certificate Or Degree
+            </option>
+            <option value="-0.05921">Professional Certificate/ Diploma</option>
+            <option value="0.45468">University Degree</option>
+            <option value="1.16365">Masters Degree</option>
+            <option value="1.98437">Doctorate Degree</option>
+          </select>
+        </div>
+
+        <div class="item">
+          <label for="Country">Country</label>
+          <select id="Country" name="Country" required>
+            Select length of the course
+            <option disabled selected value>-- select an option --</option>
+            <option value="-0.09765">Australia</option>
+            <option value="0.24923">Canada</option>
+            <option value="-0.46841">New Zealand</option>
+            <option value="0.21128">Republic of Ireland</option>
+            <option value="0.96082">UK</option>
+            <option value="-0.57009">USA</option>
+            <option value="-0.28519">Other</option>
+          </select>
+        </div>
+
+        <div class="item">
+          <label for="Ethnicity">Ethnicity</label>
+          <select id="Ethnicity" name="Ethnicity" required>
+            Select length of the course
+            <option disabled selected value>-- select an option --</option>
+            <option value="-0.50212">Asian</option>
+            <option value="-1.10702">Black</option>
+            <option value="1.90725">Mixed-Black/Asian</option>
+            <option value="0.12600">Mixed-White/Asian</option>
+            <option value="-0.22166">Mixed-White/Black</option>
+            <option value="-0.31685">White</option>
+            <option value="0.11440">Other</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">
+          Predict
+        </button>
+
+        <h2 style="text-align: center">{{ prediction_text }}</h2>
+      </form>
+    </div>
+    <h2 style="text-align: center">
+      Made by :
+      <a href="https://www.linkedin.com/in/janany-jegatheeswaran-a729661ba/"
+        >Janany Jegatheeswaran</a
+      >
+      and <a href="https://www.linkedin.com/in/ilies-gourri/">Ilies Gourri</a>
+    </h2>
+  </body>
+</html>
