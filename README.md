@@ -226,16 +226,16 @@ Then you need to go into the directory of the Flask application (the file app.py
 
 This API allows the use of the Machine Learning model, using pickle, and can also show specific rows of the dataset.
         
-### Conclusion :
+## Conclusion :
 
-The dataset was a little hard to interpret, the correlation between features and the target is weak. 
+The dataset was a little hard to interpret, the correlation between features and the target is weak. Moreover the fact that we had legal and illegal drugs at the same time did not help, like chocolate, That is way we decided to concentrate our model on illegal drugs. Other drugs were difficult to analyse because of the differents legislation and mores regarding drugs in the country.
 
-We manage to find the best way to make prediction with those features combine.
+We manage to find the best way to make prediction with those features combine, by redefining the target and changing the goal to a binary classification problem. We saw that we have a more or less balanced distribution thanks to the suppression of the legal drugs that mislead the score increases the number of positive cases.
+After seeing those good result on our binary classification problem, we have decided to begin on working on multi-classification. But unfortunately, we had a problem with the low number of supports for some underused drugs, that resulted in a weak score. We wanted to go further, one of our lines of thought was oversampling on the various minority drugs, but it is possible that this leads to overfitting.
+
+This project was a great way to dive in data analysis and get familiar with python tools such as pandas, seaborn, matplotlib, numpy. This also was an opportunity to work on multilabel data (several target variables that are not mutually exclusive).
+
         
-We wanted to go further...
-        
-This was a great way to dive in data analysis and get familiar with python tools such as pandas, seaborn, matplotlib, numpy. This also was an opportunity to work on multilabel data (several target variables that are not mutually exclusive).
-
 #### References
 
 1. Drug, Wikipedia
