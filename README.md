@@ -225,6 +225,16 @@ In order to use the API you need to install flask (pip install flask).
 Then you need to go into the directory of the Flask application (the file app.py) and write "flask run" from the command line.
 
 This API allows the use of the Machine Learning model, using pickle, and can also show specific rows of the dataset.
+        
+### Conclusion :
+
+The dataset was a little hard to interpret, the correlation between features and the target is weak. 
+
+We manage to find the best way to make prediction with those features combine.
+        
+We wanted to go further...
+        
+This was a great way to dive in data analysis and get familiar with python tools such as pandas, seaborn, matplotlib, numpy. This also was an opportunity to work on multilabel data (several target variables that are not mutually exclusive).
 
 #### References
 
